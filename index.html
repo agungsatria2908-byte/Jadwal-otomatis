@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#254b3b">
+  <title>Jadwal DEP 1B | Poliwangi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#">
+      <div class="logo">D</div>
+      <div>
+        <strong>DEP 1B</strong>
+        <small>POLITEKNIK NEGERI BANYUWANGI</small>
+      </div>
+    </a>
+    <span class="status"><i></i> JADWAL AKTIF</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR STUDY COMPANION</p>
+      <h1>Atur hari,<br><span>kejar tujuan.</span></h1>
+      <p class="intro">Jadwal perkuliahan Destinasi Pariwisata dalam satu tempat. Pantau kelas, catat tugas, dan siapkan hari berikutnya.</p>
+      <div class="hero-bottom">
+        <span>✦ Banyuwangi, Jawa Timur</span>
+        <span id="tanggal">Memuat tanggal...</span>
+      </div>
+    </section>
+
+    <section class="jadwal">
+      <p class="eyebrow dark">AGENDA PERKULIAHAN</p>
+      <h2 id="judul">Jadwal hari ini</h2>
+      <p class="subjudul" id="subjudul"></p>
+
+      <div class="pilihan">
+        <button id="hariIni" class="pilihan-btn aktif" type="button">
+          <strong>Hari ini</strong>
+          <small id="labelHariIni">Hari ini</small>
+        </button>
+        <button id="hariBesok" class="pilihan-btn" type="button">
+          <strong>Besok ↗</strong>
+          <small id="labelBesok">Besok</small>
+        </button>
+        <button id="mingguDepan" class="pilihan-btn" type="button">
+          <strong>Minggu depan</strong>
+          <small>Pekan berikutnya</small>
+        </button>
+      </div>
+
+      <div class="pilih-tanggal">
+        <label for="pilihTanggal">Atau pilih tanggal tertentu</label>
+        <input id="pilihTanggal" type="date">
+      </div>
+
+      <div class="progres">
+        <div class="progres-text">
+          <span>Progres perkuliahan</span>
+          <strong id="jumlah">0 dari 0 selesai</strong>
+        </div>
+        <div class="bar"><div id="isiBar"></div></div>
+      </div>
+
+      <div id="daftarJadwal" class="daftar" aria-live="polite">
+        <p>Menyiapkan jadwal...</p>
+      </div>
+
+      <p class="catatan-info">✓ Checklist dan catatan tugas tersimpan otomatis di browser ini berdasarkan tanggal masing-masing.</p>
+    </section>
+
+    <section class="pengingat">
+      <span class="bintang">✳</span>
+      <div>
+        <strong>Catatan kecil</strong>
+        <p>Tulis tugas atau pengingat pada kolom setiap mata kuliah. Catatan untuk pertemuan minggu depan akan tersimpan terpisah.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© DEP 1B · Destinasi Pariwisata</span>
+    <span>Made for better study days</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
